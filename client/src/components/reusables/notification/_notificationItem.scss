@@ -1,0 +1,30 @@
+.notification-item {
+  border-top: 1px solid gray;
+  background-color: blue($color: #922b2b);
+
+  .notification-item--inner {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+
+    .thumbnail {
+      margin: 1rem auto;
+    }
+
+    .message {
+      margin: 0;
+      text-align: left;
+      padding: 1rem;
+      padding-bottom: 0;
+    }
+    .read {
+      padding: 0;
+    }
+    .date {
+     font-size: $xs-font-size;
+    }
+  }
+
+}
+.backgroud-item {
+  background-color: red;
+}

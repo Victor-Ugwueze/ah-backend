@@ -1,0 +1,124 @@
+.l-ah-comment {
+  padding: 10rem 0 0;
+
+  .user-thumbnail {
+    background-color: $white;
+    padding: 1rem;
+  
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .thumbnail {
+      margin-right: 1rem;
+    }
+  
+    .user-full-name {
+      p {
+  
+        &:first-child {
+          font-weight: 600;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .comment {
+    border: 1px solid $darker-gray;
+    position: relative;
+
+    .comment-count {
+      flex-grow: 1;
+      text-align: right;
+      
+      .fa-comment {
+        margin: 0 .5rem;
+        color: $primary;
+        opacity: 1;
+      }
+    }
+  }
+  
+  .comment-text {
+    padding: 1rem;
+    margin: 0;
+    cursor: text;
+    font-style: italic;
+  }
+  
+  .comment-input {
+    
+    .editable {
+      margin: 1rem;
+      min-height: 10rem;
+      font-size: $book-font-size;
+      transition: height .3s;
+      background-color: $white;
+      padding: 1rem;
+      
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .comment-log {
+    position: relative;
+    margin: 10rem 0 0;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      border-left: 2px solid $darker-gray;
+      display: block;
+      height: calc(100% + 7rem);
+      bottom: 0;
+      left: 3rem;
+      z-index: 0;
+    }
+    
+    .user-thumbnail {
+      position: absolute;
+      background: none;
+      top: -6.5rem;
+    }
+    
+    .comment-body {
+      border-radius: 5px;
+      background-color: $white;
+      border: 1px solid $darker-gray;
+      z-index: 5;
+      position: relative;
+
+      p {
+        padding: 3rem;
+        padding-bottom: 0;
+        margin: 0;
+        line-height: 1.8;
+      }
+      
+      .comment-reaction {
+        padding: 2rem 3rem;
+
+        p {
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+          margin-right: 2rem;
+          cursor: pointer;
+          // border: 1px solid #000;
+          border-radius: 30px;
+          padding: 0 1.5rem;
+          background-color: $dark-gray;
+
+          .far {
+            padding-left: 1rem;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

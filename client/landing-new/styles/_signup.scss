@@ -1,0 +1,76 @@
+.sign-up {
+    .form-wrap {
+        background: none;
+        border: 0;
+    }
+}
+
+.sign-up-card {
+
+    background-color: $white;
+    margin-bottom: 1.5rem;
+
+    a {
+        display: block;
+        padding: 1rem 2rem;
+        color: #222222;
+        text-decoration: none;
+        font-size: 1.6rem;
+
+        .fab {
+            padding: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .fa-twitter {
+            color: #00a2ff;
+        }
+
+        .fa-facebook {
+            color: #00a2ff;
+        }
+
+        .fa-google {
+            color: #d93025;
+        }
+
+        .fa-envelope {
+            color: #d93025;
+        }
+
+        .fab {
+            @include fontMargin;
+        }
+
+        .fas {
+            @include fontMargin;
+            padding: 1rem;
+        }
+    }
+}
+
+#sign-up-modal {
+    background-color: rgba(242,242,242,.9);
+
+    .modal-content {
+        margin: 3rem;
+        background: none;
+        border: 0;
+    }
+
+}
+
+.modal-content .close {
+    position: absolute;
+    right: -2.5rem;
+    top: -2.5rem;
+    display: inline-block;
+    border: 1px solid #000;
+    height: 4rem;
+    width: 4rem;
+    z-index: 99999999;
+    background-color: $white;
+    border-radius: 50%;
+    opacity: 1;
+    border: 0;
+}

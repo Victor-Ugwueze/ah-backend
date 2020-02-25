@@ -1,0 +1,23 @@
+.userDetail {
+  .username-wrap {
+    margin: 0 2rem;
+
+    .username {
+      font-weight: 600;
+    }
+    
+    .notice {
+      font-size: $xs-font-size;
+      font-style: italic;
+
+      .date {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+.l-ah-report {
+  flex-grow: 1;
+  text-align: right;
+}

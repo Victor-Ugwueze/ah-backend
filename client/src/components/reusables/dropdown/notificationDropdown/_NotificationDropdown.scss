@@ -1,0 +1,13 @@
+.notification {
+  width: 400px;
+  right: 22%;
+  .settings {
+    padding: 1.2rem 2rem;
+    a {
+      color: $primary;
+    }
+  }
+  .no-notification {
+    height: 100px;
+  }
+}

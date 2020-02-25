@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the singup page should render the signup form 1`] = `
+<div
+  className="form-wrap pb-5 text-center"
+>
+  <form
+    className="form-row"
+    onSubmit={[Function]}
+  >
+    <div
+      className="col-10 offset-1"
+    >
+      <div
+        className="input-wrap"
+      >
+        <SignupInputGroup
+          iconClassName="fas fa-envelope"
+          inputValue=""
+          onChange={[Function]}
+          type="email"
+        />
+        <div
+          className="email-message text-left alert "
+        >
+          <p>
+            A verification email will be sent to your mail box
+          </p>
+          <p />
+        </div>
+      </div>
+      <button
+        className="btn"
+        disabled={false}
+        type="submit"
+      >
+        Sign up
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Renders the singup page should render the signup page 1`] = `
+<div
+  className="sign-up"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row auth-h d-flex align-items-center"
+    >
+      <div
+        className="col-md-6 offset-md-3 text-center login-wrap"
+      >
+        <img
+          src="/images/logo.png"
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-8 offset-md-2"
+          >
+            <div
+              className="form-wrap"
+            >
+              <h1
+                className="form-title"
+              >
+                Sign up
+              </h1>
+              <div
+                className="sign-up-card-wrap text-left"
+              >
+                <div
+                  className="sign-up-card facebook"
+                >
+                  <a
+                    className="d-flex align-items-center"
+                  >
+                    <i
+                      className="fab fa-facebook"
+                    />
+                    Sign up with 
+                    Facebook
+                  </a>
+                </div>
+                <div
+                  className="sign-up-card facebook"
+                >
+                  <a
+                    className="d-flex align-items-center"
+                  >
+                    <i
+                      className="fab fa-twitter"
+                    />
+                    Sign up with 
+                    Twitter
+                  </a>
+                </div>
+                <div
+                  className="sign-up-card facebook"
+                >
+                  <a
+                    className="d-flex align-items-center"
+                  >
+                    <i
+                      className="fab fa-google"
+                    />
+                    Sign up with 
+                    Google
+                  </a>
+                </div>
+                <div
+                  className="sign-up-card facebook"
+                >
+                  <a
+                    className="d-flex align-items-center"
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fas fa-envelope"
+                    />
+                    Sign up with Email
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="form-footer"
+            >
+              <p>
+                Already have an account?
+                <a
+                  href="./login"
+                >
+                  Login
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Renders the update page page should render the update form 1`] = `
+<form
+  className="form-row"
+  onSubmit={[Function]}
+>
+  <div
+    className="col-10 offset-1"
+  >
+    <div
+      className="input-wrap"
+    >
+      <SignupInputGroup
+        disabled={true}
+        iconClassName="fas fa-envelope"
+        inValidfeedback="Please your email"
+        name="email"
+        placeholder="email"
+        type="email"
+        value="email@gmail.com"
+      />
+      <SignupInputGroup
+        iconClassName="fas fa-user"
+        inValidfeedback="Please enter your full name"
+        name="fullname"
+        placeholder="fullname"
+        type="text"
+      />
+      <SignupInputGroup
+        iconClassName="fas fa-at"
+        inValidfeedback="Please enter a username"
+        name="username"
+        placeholder="user name"
+        type="text"
+      />
+      <SignupInputGroup
+        iconClassName="fas fa-lock"
+        inValidfeedback="Please enter your password."
+        name="password"
+        placeholder="password"
+        type="password"
+      />
+      <SignupInputGroup
+        iconClassName="fas fa-lock"
+        inValidfeedback=" Please confirm your password."
+        name="confirm password"
+        placeholder="confirm password"
+        type="password"
+      />
+    </div>
+    <button
+      className="btn continue"
+    >
+      Continue
+    </button>
+    <div>
+      <Component
+        className="spinner"
+        color="#0FC86F"
+        component="div"
+        loadedClassName="loadedContent"
+        parentClassName="loader"
+        speed={1}
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Renders the update page page should render the update page 1`] = `
+<div
+  className="login"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row auth-h d-flex align-items-center"
+    >
+      <div
+        className="col-md-6 offset-md-3 text-center login-wrap"
+      >
+        <Logo />
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-10 offset-md-1"
+          >
+            <div
+              className="form-wrap"
+            >
+              <h1
+                className="form-title"
+              >
+                Complete your registration
+              </h1>
+              <UpdateAccountForm
+                email="email@test.com"
+                handleSubmit={[Function]}
+                loading={
+                  Object {
+                    "display": "none",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+@mixin flex-center($jcside:center, $aiside:center) {
+  display: flex;
+  justify-content: $jcside;
+  align-items: $aiside;
+}
+
+@mixin custom-button($top:0, $right:0, $colorf: $darker, $colorb: $light-gray) {
+  padding: $top $right;
+  color: $colorf;
+  background: $colorb;
+  cursor: pointer;
+}

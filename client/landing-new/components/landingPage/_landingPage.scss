@@ -1,0 +1,343 @@
+.index {
+  position: relative;
+  padding-bottom: 20rem;
+
+  figure {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to top, #00f260 0%, transparent 20%);
+    }
+  }
+
+  .details {
+    border-top: 1px solid $dark-gray;
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    .thumbnail {
+      @extend .thumbnail;
+      margin-right: 1rem;
+    }
+
+    .notice {
+      font-style: italic;
+      font-weight: 100;
+
+      .date {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .details-sm {
+    @extend .details;
+    font-size: 1.2rem;
+  }
+
+  .l-ah-2 {
+    height: 80rem;
+    @include flex-center(start, flex-end);
+    position: relative;
+    background-color: $dark-gray;
+    padding-left: 20rem;
+    background: url("../imgs/bg.jpg") no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .hero-inner {
+      display: inline-block;
+      margin-bottom: 15rem;
+
+      h1 {
+        font-size: $hero-font-size;
+        letter-spacing: 0rem;
+        margin-top: -1rem;
+        padding-top: 0;
+        width: 80rem;
+      }
+
+      p {
+        font-size: $book-font-size;
+        width: 60rem;
+        margin-top: 2rem;
+        letter-spacing: 0;
+        line-height: 2.5rem
+      }
+    }
+  }
+
+  .l-ah-3 {
+    padding: 10rem 0 8rem;
+    border-bottom: 1px solid $dark-gray;
+
+    .l-ah-bg-card {
+      height: 60rem;
+      padding: 2rem;
+
+      figcaption {
+
+        p {
+          line-height: 2.5rem;
+        }
+      }
+    }
+
+    .l-ah-sm-card-wrap {
+      height: 100%;
+      padding: 2rem 2rem 1rem;
+
+      .l-ah-sm-card {
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 2rem;
+
+        figure {
+          img {
+            width: 18rem;
+          }
+        }
+
+        &:last-child {
+          margin: 0;
+          border-bottom: 0;
+          padding: 0;
+        }
+        margin-bottom: 1rem;
+        figure {
+          margin: 0;
+        }
+        figcaption {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+
+  .l-ah-4 {
+    padding: 10rem 0 15rem;
+    position: relative;
+
+    .pattern {
+      position: absolute;
+      left: 0;
+      top: -5rem;
+    }
+
+    .l-ah-card {
+      background-color: $white;
+      padding: 2rem;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.17);
+      border-bottom: 10px solid $darker-gray;
+
+      figcaption {
+        padding: 2rem 0 0;
+        h4 {
+          padding: 0 0 1rem;
+        }
+      }
+    }
+
+    .l-ah-sm-card-wrap {
+      background-color: $white;
+      height: 100%;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.17);
+      border-bottom: 10px solid $darker-gray;
+      padding: 2rem 0;
+
+      .l-ah-sm-card {
+        padding: 1rem 2rem 1rem;
+        border-bottom: 1px solid $dark-gray;
+
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: 0;
+        }
+
+        &:hover {
+          background-color: $light-gray;
+          cursor: pointer;
+        }
+
+        figure {
+          margin: 0;
+          img {
+            width: 23rem;
+          }
+        }
+
+        figcaption {
+          padding-left: 1rem;
+
+          h5 {
+          }
+        }
+      }
+    }
+  }
+
+  .l-ah-5 {
+    position: relative;
+    padding: 0 0 15rem;
+
+    .slide-card {
+      padding: 0 1rem;
+      figure {
+        overflow: hidden;
+        img {
+          transition: transform 1s;
+        }
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      z-index: 99;
+
+      &::before {
+        font-size: 6rem;
+        color: $white;
+      }
+    }
+    .slick-prev {
+      left: 5rem;
+      top: 50%;
+    }
+    .slick-next {
+      right: 10rem;
+      top: 50%;
+    }
+  }
+
+  .l-ah-title {
+    margin-bottom: 6rem;
+    color: lighten($color: #000000, $amount: 0);
+    color: $primary;
+    display: flex;
+
+    &::after, &::before {
+      content: "";
+      background: $dark-gray;
+      height: 3px;
+      position: relative;
+      top: 15%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: auto;
+      margin: .75em 2px 0 3px;
+      flex-grow: 1;
+      border-radius: 2px;
+    }
+
+    &::after {
+      background: linear-gradient(to right,$primary, lighten($primary, 60%));
+    }
+
+    &::before {
+      background: linear-gradient(to right, lighten($primary, 60%), $primary);
+    }
+  }
+
+  .l-ah-title-left {
+    @extend .l-ah-title;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .l-ah-6 {
+    .tag-wrap {
+      border-bottom: 1px solid $darker-gray;
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      .tag {
+        background-color: $white;
+        border: 1px solid $primary;
+        color: $primary;
+        padding: 1.5rem 3.5rem;
+        margin: 1rem;
+        display: inline-block;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .active {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+
+    .tag-search-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 3rem;
+
+      .tag-body-card {
+        border: 2px solid $dark-gray;
+        border-bottom: 10px solid $darker-gray;
+        transition: 0.25s ease;
+
+          &:hover {
+            box-shadow: 0 10px 50px -10px rgba(134, 134, 134, 0.64);
+            transition: 0.25s ease;
+            transform: translateY(-2%)
+          }
+
+        figure {
+          border-bottom: 5px solid $primary;
+          margin-bottom: 0;
+        }
+
+        figcaption {
+          background-color: $white;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+.l-ah-hero-blog {
+  margin: 8rem 0 10rem;
+  height: 65rem;
+  position: relative;
+
+  .l-ah-hero-blog-inner {
+    border: 2px solid $white;
+    display: block;
+    bottom: -10rem;
+    left: 20rem;
+    position: absolute;
+
+    figcaption {
+      padding: 3rem 4rem;
+      width: 60rem;
+      background-color: $white;
+      box-shadow: 0 2px 2px 1px #eeee;
+      p {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+figure {
+  height: 100%;
+  background-size: cover !important;
+}

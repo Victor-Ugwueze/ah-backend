@@ -1,0 +1,18 @@
+@import "../../components/profile/profileHeader/profileHeader";
+@import "../../components/profile/profileSidebar/profileSidebar";
+@import "../../components/profile/profileEditModal/profileEditModal";
+
+.l-ah-profile {
+  .edit-positioning {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    z-index: 11;
+    display: block;
+  }
+
+  .z-positioning {
+    z-index: 11;
+    display: block !important;
+  }
+}

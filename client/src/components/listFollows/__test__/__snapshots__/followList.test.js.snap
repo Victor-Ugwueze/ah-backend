@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders followers page should render the followers component 1`] = `
+<Fragment>
+  <Header
+    isAuth={true}
+    user={null}
+  />
+  <div
+    className="list-following"
+  >
+    <div
+      className="title"
+    >
+      <h4>
+        List Followers
+      </h4>
+    </div>
+    <div
+      className="row d-flex flex-row items-container"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Renders following page should render the following component 1`] = `
+<Fragment>
+  <Header
+    isAuth={true}
+    user={null}
+  />
+  <div
+    className="list-following"
+  >
+    <div
+      className="title"
+    >
+      <h4>
+        List Following
+      </h4>
+    </div>
+    <div
+      className="row d-flex flex-row items-container"
+    />
+  </div>
+</Fragment>
+`;

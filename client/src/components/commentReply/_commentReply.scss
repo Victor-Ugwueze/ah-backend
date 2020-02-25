@@ -1,0 +1,43 @@
+.l-ah-comment-reply {
+  padding-top: 3rem;
+
+  .main-comment {
+    @extend .l-ah-comment;
+    .comment-log {
+      margin: 0;
+      padding: 0;
+      border: 1px solid $darker-gray;
+      border-radius: 4px;
+
+      &::before {
+        content: none;
+      }
+
+      .user-thumbnail {
+        background-color: $white;
+        position: relative;
+        top: 0;
+        border-radius: 4px;
+        border-bottom: 1px solid $darker-gray;
+      }
+
+      .comment-body {
+        border: 0;
+        background: lighten($primary, 56%);
+
+        p {
+          padding-left: 1rem;
+        }
+      }
+
+      .editable {
+        border: 1px solid $dark-gray;
+      }
+    }
+  }
+
+  .main-comment--reply {
+    @extend .l-ah-comment;
+    padding: 0 0 0;
+  }
+}

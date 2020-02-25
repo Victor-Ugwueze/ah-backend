@@ -1,0 +1,183 @@
+.l-ah-create-article {
+  height: 100vh;
+  padding-top: 20rem;
+
+  .create-article-wrap {
+    position: relative;
+
+    .create-article-form {
+      padding: 1rem;
+
+      .article-title {
+        height: auto;
+        font-size: 6rem;
+        line-height: 8rem;
+        border-right: 1px solid $light-gray;
+        position: relative;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        min-height: 60px;
+
+        &:empty {
+          color: lighten($dark, 50%);
+          padding-top: 45px;
+          line-height: 1rem;
+          &::after {
+            content: "Title goes here...";
+            position: absolute;
+            cursor: text;
+            top: 0;
+          }
+        }
+
+        &::before {
+          content: "Title";
+          font-size: 2rem;
+          font-weight: 500;
+          position: absolute;
+          height: 100%;
+          padding-right: 2rem;
+          border-right: 1px solid $dark-gray;
+          top: 0;
+          left: -8rem;
+          display: block;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      .form-body-wrap {
+        label {
+          font-size: 2.5rem;
+          
+          i {
+            cursor: pointer;
+            border: 2px solid #000;
+            border-radius: 50%;
+            padding: 1rem;
+            margin-left: 1rem;
+          }
+        }
+
+        .input-wrap {
+          border-top: 1px solid $darker-gray;
+          border-bottom: 1px solid $darker-gray;
+          display: block;
+          padding: 2rem;
+          margin: 1rem 0;
+          background-color: $dark-gray;
+        }
+        
+        .form-body {
+          display: none;
+        }
+      }
+
+      .article-editor-wrap {
+        margin-top: 3rem;
+        .article-editor {
+          line-height: 5rem;
+          font-size: 3rem;
+          position: relative;
+
+          &::before {
+            content: "Body";
+            font-size: 2rem;
+            font-weight: 500;
+            position: absolute;
+            height: 100%;
+            padding-right: 2rem;
+            border-right: 1px solid $dark-gray;
+            top: 0;
+            left: -8rem;
+            display: block;
+            opacity: .5;
+          }
+
+          p {
+            line-height: 5rem;
+            font-size: 3rem;
+          }
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+
+  }
+  .l-ah-article-sidebar {
+    width:  450px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: $white;
+    height: 100%;
+    overflow: hidden;
+    z-index: 500;
+    transform: translateX(470px);
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25);
+
+    &.active {
+      transform: translateX(0);
+      transition: all .5s ease-in-out;
+    }
+
+    .sidebar-close {
+      position: absolute;
+      top: 10rem;
+      right: 3rem;
+      font-size: 3.5rem;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .sidebar-inner {
+      margin-top: 20rem;
+      padding: 0 3rem;
+
+      .cta-btn {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid $dark-gray;
+
+        .publish-btn {
+          padding: .7rem 3rem;
+          margin-right: 2rem;
+          box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .discard-btn {
+          padding: 0;
+          background: none;
+          box-shadow: none;
+          color: $dark;
+        }
+      }
+
+      .sidebar-desc {
+        border-bottom: 1px solid $dark-gray;
+        margin-bottom: 2rem;
+        p {
+          font-weight: 600;
+        }
+
+        textarea {
+          width: 100%;
+          font-size: $book-font-size;
+          padding: 2rem 1rem;
+          margin: 0 0 2rem;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+    }
+  }
+}

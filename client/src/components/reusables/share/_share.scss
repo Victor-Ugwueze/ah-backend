@@ -1,0 +1,25 @@
+.l-ah-share-wrap {
+  position: fixed;
+  left: 5rem;
+  top: 40rem;
+  width: 5rem;
+
+  p {
+    font-weight: 600;
+    border-bottom: 1px solid $darker-gray;
+
+  }
+
+  .l-ah-share {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+  
+    .l-ah-share-icon {
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
