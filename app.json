@@ -1,0 +1,48 @@
+{
+  "name": "lotus-ah",
+  "scripts": {
+  },
+  "env": {
+    "DATABASE": {
+      "required": true
+    },
+    "DIALECT": {
+      "required": true
+    },
+    "HOST": {
+      "required": true
+    },
+    "PASSWORD": {
+      "required": true
+    },
+    "USER": {
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "required": true
+    },
+    "TWITTER_CONSUMER_KEY": {
+      "required": true
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "required": true
+    },
+    "FACEBOOK_CLIENT_ID": {
+      "required": true
+    },
+    "FACEBOOK_CLIENT_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}

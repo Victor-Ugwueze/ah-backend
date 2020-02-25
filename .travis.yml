@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- stable
+services:
+- postgresql
+before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
+- sequelize db:migrate
+after_success:
+- npm run coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: JgZqZzWkaIpXT21VWfXs7As+YF1BHTUJz1t5qoPr6q5NcvMvT9TJXommykpJ2Z95TE8qJNVLe0FTmapwglzSC3/uytGbGaOEVpo1OemKhlY7enluaNk420usOUqDQPHbmO7v4BQ/KKQ0pzAnRUWkPTeyhfX0BYdYlyqPMnid7zmidkwphUEEV7whZq/Hnc9TYQO/OWlhQBY150A6uiFw2K8bDo3iZaJouLDpXFlzBcn3GCmI8qz3UK79wlZfqyO1RMkyfzavt7oAu/91EwJ4zEpPUN5t5T/smUuGqo+ErtBHpFuPakrqQLD08psSAuM3XSorolQ7xuc4ZCLiDfmcAd8n3bhs63Y75IAosk2x+KC2vGgKcKsMxb/88dBNFJr8p7DvzFqProINYAZR+Z1r8Etovy2bqg1l0f2PmBGM7htWhgUB8BoFC2qa3utwSld2VDT2b8bGy7sKL4FK7Z0nmTu6fYGDo6VDLJuXbN81gYm6LN40o9+Ch4egbU0mU6LEC8qu3ZQgkkekjdxI65ss9zJybYTh1V25oqHP2V4PbJNtr7HUfcshu69EdtuJLSx48oRFjfxhZJ8ygGiyrGW6kLZ2vrOSjzdSnXmyDjsbT6nIP0uoOwrHoQbPOJmJTslo7kvd2SFr4WXd2uwAdFK7coj+6OBEz1qCwzA5ZmYHdEk=
+  app:
+    master: lotus-ah
+    develop: lotus-ah-staging
+  on:
+    repo: andela/lotus-ah
+  run:
+    - sequelize db:migrate
