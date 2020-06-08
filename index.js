@@ -15,7 +15,7 @@ import config from './server/config/config';
 
 
 dotenv.config();
-passportSetup();
+// passportSetup();
 const isProduction = config.production;
 
 // Create global app object
